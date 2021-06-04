@@ -2,3 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 pnpm run build
+git add .
+git commit -m 'feat: build'
