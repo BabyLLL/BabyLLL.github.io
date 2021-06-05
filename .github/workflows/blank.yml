@@ -20,6 +20,6 @@ jobs:
         with:
           # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          # FOLDER: build 
-           github_token: ${{ secrets.ACCESS_TOKEN }}
+          # FOLDER: build
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./doc
