@@ -1,6 +1,5 @@
 <template>
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  11
 </template>
 
 <script lang="ts">

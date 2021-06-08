@@ -1,6 +1,8 @@
 <template>
-  <h1>hello ~~</h1>
-  <h1>哈哈哈哈哈</h1>
+  <div>
+    <h1>hello~~</h1>
+    <h1>哈哈哈哈哈</h1>
+  </div>
 </template>
 
 <script lang="ts">
@@ -19,4 +21,3 @@ export default defineComponent({
   }
 })
 </script>
-
