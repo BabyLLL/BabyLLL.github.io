@@ -1,32 +1,22 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <main>
+    <NavBar />
+
+    <section>
+      <router-view />
+    </section>
+  </main>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from 'vue'
+
+import NavBar from '/~/pages/NavBar.vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
-  },
-  setup(props, context) {
-    const num = ref(0)
-    return {
-      num
-    }
-  }
+  components: { NavBar }
 })
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
