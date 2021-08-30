@@ -1,17 +1,17 @@
 <template>
-  <main>
+  <div>
     <NavBar />
 
-    <section>
+    <main>
       <router-view />
-    </section>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import NavBar from '/~/pages/NavBar.vue'
+import NavBar from '/~/components/NavBar/NavBar.vue'
 
 export default defineComponent({
   name: 'App',
