@@ -44,6 +44,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     'vue/one-component-per-file': 'off',
     'vue/experimental-script-setup-vars': 'off',
     'vue/no-deprecated-props-default-this': 'off'

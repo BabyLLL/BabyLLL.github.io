@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import routes from './routes'
+import routes from 'virtual:generated-pages'
+console.log(routes)
+// import routes from './routes'
 
 export const router = createRouter({
   history: createWebHistory(),
-  routes // `routes: routes` 的缩写
+  routes
 })

@@ -2,21 +2,13 @@
   <div>
     <NavBar />
 
-    <main>
+    <main class="px-7 py-10">
       <router-view />
+      <Footer></Footer>
     </main>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-import NavBar from '/~/components/NavBar/NavBar.vue'
-
-export default defineComponent({
-  name: 'App',
-  components: { NavBar }
-})
-</script>
+<script setup lang="ts"></script>
 
 <style></style>
