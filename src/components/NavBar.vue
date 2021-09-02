@@ -16,11 +16,11 @@
           <span class="<md:hidden">Blog</span>
           <ri-article-line class="md:hidden" />
         </router-link>
-        <a href="https://github.com/ArcherGu" target="_blank" title="GitHub">
+        <a href="https://github.com/BabyLLL" target="_blank" title="GitHub">
           <uil-github-alt />
         </a>
         <a
-          href="https://www.zhihu.com/people/gu-bu-shang-98"
+          href="https://www.zhihu.com/people/lzhu-97-13"
           target="_blank"
           title="Zhihu"
         >
@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-// import { isDark } from '/~/untils'
+import { isDark } from '../utils'
 </script>
 
 <style scoped>
