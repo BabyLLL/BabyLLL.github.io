@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <meta name="author" content="Promise L" />
+    <link rel="icon" href="/logo-dark.svg" type="image/svg+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  <script type="module" crossorigin src="/assets/index.719054c8.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.c8b23b25.js">
-  <link rel="stylesheet" href="/assets/index.ccce2ca3.css">
-</head>
-  <body>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Promise L</title>
+  <script type="module" crossorigin src="/assets/index.a9b038f9.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.80b21952.js">
+    <link rel="stylesheet" href="/assets/index.3fbdf749.css">
+  </head>
+
+<body>
     <div id="app"></div>
+    <script>
+        (function () {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            const setting = localStorage.getItem('color-schema') || 'auto'
+            if (setting === 'dark' || (prefersDark && setting !== 'light'))
+                document.documentElement.classList.toggle('dark', true)
+        })()
+    </script>
     
-  </body>
+</body>
+
 </html>
