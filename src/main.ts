@@ -18,8 +18,4 @@ import routes from 'virtual:generated-pages'
 
 // app.mount('#app')
 
-export const createApp = ViteSSG(App, { routes }, ctx => {
-  Object.values(import.meta.globEager('./plugins/*.ts')).map(i =>
-    i.install?.(ctx)
-  )
-})
+export const createApp = ViteSSG(App, { routes })
