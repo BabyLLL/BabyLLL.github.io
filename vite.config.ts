@@ -37,7 +37,6 @@ export default defineConfig({
       'vue',
       'vue-router',
       '@vueuse/core',
-      '@iconify/iconify',
       'dayjs',
       'dayjs/plugin/localizedFormat'
     ]
