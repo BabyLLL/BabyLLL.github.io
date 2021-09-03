@@ -1,16 +1,25 @@
 import 'windi.css'
 import './style/index.postcss'
 
-import { createApp } from 'vue'
+// import { createApp } from 'vue'
 import App from './App.vue'
-import { createHead } from '@vueuse/head'
-import { router } from './router/router'
+import { ViteSSG } from 'vite-ssg'
+import routes from 'virtual:generated-pages'
 
-const app = createApp(App)
-const head = createHead()
+// import { createHead } from '@vueuse/head'
+// import { router } from './router/router'
 
-app.use(router)
+// const app = createApp(App)
+// const head = createHead()
 
-app.use(head)
+// app.use(router)
 
-app.mount('#app')
+// app.use(head)
+
+// app.mount('#app')
+
+export const createApp = ViteSSG(App, { routes }, ctx => {
+  Object.values(import.meta.globEager('./plugins/*.ts')).map(i =>
+    i.install?.(ctx)
+  )
+})
