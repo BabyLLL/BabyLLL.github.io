@@ -43,7 +43,7 @@ import { useRoute } from 'vue-router'
 import { useEventListener, isClient } from '@vueuse/core'
 
 const route = useRoute()
-const { frontmatter } = defineProps<{ frontmatter: unknown }>()
+const { frontmatter } = defineProps<{ frontmatter: any }>()
 
 const tags = computed(() => {
   let { tags, tagsColor } = frontmatter

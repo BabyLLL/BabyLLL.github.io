@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 
 const router = useRouter()
-const routes = router
+const routes: any = router
   .getRoutes()
   .filter(i => i.path.startsWith('/posts') && i.meta.frontmatter.date)
   .sort(

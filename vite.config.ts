@@ -24,7 +24,12 @@ export default defineConfig({
   },
 
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
+    rollupOptions: {
+      onwarn(warning, next) {
+        if (warning.code !== 'UNUSED_EXTERNAL_IMPORT') next(warning)
+      }
+    }
   },
 
   plugins: [
