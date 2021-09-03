@@ -120,10 +120,10 @@ async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
 
   items.forEach(item => feed.addItem(item))
 
-  await fs.ensureDir(dirname(`./docs/${name}`))
-  await fs.writeFile(`./docs/${name}.xml`, feed.rss2(), 'utf-8')
-  await fs.writeFile(`./docs/${name}.atom`, feed.atom1(), 'utf-8')
-  await fs.writeFile(`./docs/${name}.json`, feed.json1(), 'utf-8')
+  await fs.ensureDir(dirname(`./dist/${name}`))
+  await fs.writeFile(`./dist/${name}.xml`, feed.rss2(), 'utf-8')
+  await fs.writeFile(`./dist/${name}.atom`, feed.atom1(), 'utf-8')
+  await fs.writeFile(`./dist/${name}.json`, feed.json1(), 'utf-8')
 }
 
 run()
