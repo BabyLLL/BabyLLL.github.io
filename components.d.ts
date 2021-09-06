@@ -8,6 +8,7 @@ declare module 'vue' {
     '// Read more': https://github.com/vuejs/vue-next/pull/3399
     App: typeof import('./Users/zhangbaolong/Promise/test/vite_promise_blogs/promise_blogs/src/App.vue')['default']
     Blog: typeof import('./src/components/Blog.vue')['default']
+    CommonList: typeof import('./src/components/CommonList.vue')['default']
     Dddd: typeof import('./Users/zhangbaolong/Promise/test/vite_promise_blogs/promise_blogs/src/components/Dddd.md')['default']
     FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']

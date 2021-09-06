@@ -9,4 +9,5 @@ display: ''
   </h1>
 </div>
 
-<ListPosts />
+<CommonList path='/posts' />
+
