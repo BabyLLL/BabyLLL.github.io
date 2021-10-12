@@ -1,5 +1,5 @@
 ---
-title: 13 | HTTP有哪些特点？？
+title: 13 | HTTP有哪些特点？
 date: 2021-10-12T16:00:00.000+00:00
 duration: 10min
 ---
