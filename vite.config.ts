@@ -51,7 +51,8 @@ export default defineConfig({
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: IconsResolver({
-        componentPrefix: ''
+        componentPrefix: '',
+        enabledCollections: ['carbon']
       })
     }),
 
