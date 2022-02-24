@@ -28,7 +28,7 @@
     <slot />
     <div v-if="route.path !== '/'" class="prose m-auto mt-8 mb-8">
       <router-link
-        :to="route.path.split('/').slice(0, -1).join('/') || '/'"
+        :to="linkTo()"
         class="font-mono no-underline opacity-50 hover:opacity-75"
         >cd ..</router-link
       >
@@ -58,6 +58,17 @@ const tags = computed(() => {
 
   return []
 })
+
+function linkTo() {
+  return getRoutePath().split('/').slice(0, -1).join('/') || '/'
+}
+
+function getRoutePath() {
+  let path = route.path
+  const isChildpages = route.path.indexOf('childpages') >= 0
+  if (isChildpages) path = path.replace('childpages', 'posts')
+  return path
+}
 
 if (isClient) {
   const navigate = () => {

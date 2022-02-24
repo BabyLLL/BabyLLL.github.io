@@ -9,7 +9,6 @@ const props = defineProps<{
 }>()
 
 const router = useRouter()
-console.log(router.getRoutes())
 const routes: any = router
   .getRoutes()
   .filter(i => i.path.includes(props.path) && i.meta.frontmatter.date)

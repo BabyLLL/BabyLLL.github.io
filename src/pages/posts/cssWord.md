@@ -1,9 +1,9 @@
 ---
-title: 透视HTTP协议
+title: CSS新世界
 date: 2021-09-6T16:00:00.000+00:00
 lang: 系列
 duration: 10min
 ---
 
 
-<CommonList path='/childpages/http' />
+<CommonList path='/childpages/cssword' />
