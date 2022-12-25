@@ -28,6 +28,13 @@ export default defineConfig({
     rollupOptions: {
       onwarn(warning, next) {
         if (warning.code !== 'UNUSED_EXTERNAL_IMPORT') next(warning)
+      },
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        christmasTree: resolve(__dirname, 'christmasTree/index.html')
+      },
+      output: {
+        inlineDynamicImports: false
       }
     }
   },
