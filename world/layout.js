@@ -139,7 +139,7 @@ export const PETS = {
 // Xiaoguai, our own addition: the girlfriend in the world. Her anchors reuse
 // the walkable lanes the cat's plan proves; the sofa seat is the cat's home.
 export const XIAOGUAI = {
-  skin: 'assets/skins/xiaoguai.png?v=2',
+  skin: 'assets/skins/xiaoguai.png?v=3',
   sofa: [1.85, -3.2],
   anchors: [
     [1.0, -0.3],   // south end of the lounge rug
