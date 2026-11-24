@@ -1,0 +1,18 @@
+/* The pixel-sword cursor, adopted from the Labyrinth site: one 32x32 PNG
+   carried by a variable, applied across the site with a system fallback.
+   The engine sets some canvas cursors inline (hidden while web-aiming,
+   pointer over the portal); inline styles win, so those affordances keep. */
+:root {
+  /* public/ assets are served from the site root. */
+  --sword-cursor: url("/assets/cursor/sword.png") 0 0;
+}
+
+html, body, #world, #world canvas, dialog {
+  cursor: var(--sword-cursor), auto;
+}
+
+/* Interactive elements keep the sword with a pointer fallback. */
+#minimap, #minimap canvas, #hud button, #panel button, #panel a, .mc-button,
+#phone .app, #phone .bar, #phone .back, .work-peek, .world-row {
+  cursor: var(--sword-cursor), pointer;
+}

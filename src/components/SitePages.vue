@@ -33,6 +33,27 @@
       </ul>
     </article>
 
+    <article class="page" data-station="works">
+      <h2 data-zh="工作台">Workbench</h2>
+      <ul class="store">
+        <li data-work="homecraft">
+          <div class="listing">
+            <img :src="'assets/homecraft-logo.png'" alt="" width="64" height="64">
+            <div>
+              <h3>BabyLLL's World</h3>
+              <p data-zh="Minecraft 风格 3D 个人主页">A Minecraft-style 3D personal site</p>
+            </div>
+            <a class="mc-button get" href="https://github.com/BabyLLL" target="_blank" rel="noopener" data-zh="打开">Open</a>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <article class="page" data-station="xiaoguai">
+      <h2 data-zh="小乖">Xiaoguai</h2>
+      <p>你好啊，我的爱人！</p>
+    </article>
+
     <article class="page" id="mailbox" data-station="mailbox">
       <h2 data-zh="留言">Mailbox</h2>
       <form class="mailbox" method="post" enctype="text/plain">
