@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Pick the language before the first paint, so the loading line never swaps
+     mid-flight. The rules match engine/lang.js: ?lang, then the saved choice,
+     then the browser's. -->
+<script>(function(){var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('homecraft-lang')}catch(e){}var l=q==='en'||q==='zh'?q:(s==='en'||s==='zh'?s:(((navigator.languages&&navigator.languages[0])||navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en'));document.documentElement.lang=l==='en'?'en':'zh-CN';window.__homecraftLang=l})();</script>
+<meta name="theme-color" content="#7fb2e8">
+<!-- The world draws its own day and night. -->
+<meta name="color-scheme" content="only light">
+<meta name="darkreader-lock">
+<title>BabyLLL's World</title>
+<meta name="description" content="BabyLLL 的 Minecraft 风格 3D 个人主页">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BabyLLL's World">
+<meta property="og:description" content="BabyLLL 的 Minecraft 风格 3D 个人主页">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="engine/assets/homecraft-logo.png">
+<link rel="stylesheet" href="engine/style.css">
+</head>
+<body>
+<div id="app"></div>
+<!-- file:// cannot load ES modules, so neither Vue nor the world can start. -->
+<script>
+if (location.protocol === 'file:') {
+  const zh = /^zh/i.test(navigator.language), note = document.createElement('aside');
+  note.id = 'startupNotice';
+  note.innerHTML = zh
+    ? '<h2>请用开发服务器打开</h2><p>直接双击打开时，浏览器不会加载页面。在这个文件夹里运行 <code>npm run dev</code>，它会启动开发服务器并自动打开页面。</p>'
+    : '<h2>Open it through the dev server</h2><p>Browsers don’t load the page from a double-clicked file. In this folder, run <code>npm run dev</code>; it starts the dev server and opens the page.</p>';
+  document.getElementById('app').after(note);
+}
+</script>
+<noscript><p style="padding:2rem;font-family:sans-serif">请启用 JavaScript / Please enable JavaScript.</p></noscript>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
