@@ -1,4 +1,0 @@
-**/node_modules
-!.eslintrc.js
-!.commitlintrc.js
-!.vuepress
